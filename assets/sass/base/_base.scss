@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 *,
 *::after,
 *::before {
@@ -13,4 +14,9 @@ html {
 body {
     box-sizing: border-box;
     background: $bg-white;
+}
+
+h2 {
+    color: $font-black;
+    font-size: 30px;
 }

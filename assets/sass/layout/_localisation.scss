@@ -1,10 +1,11 @@
-.section__localisation {
+.section__location {
+    align-items: center;
     background-color: $bg-grey-dark;
     display: flex;
     justify-content: center;
     padding: 1em;
 
-    &-title {
+    &-input {
         margin-left: .5em;
     }
 }
