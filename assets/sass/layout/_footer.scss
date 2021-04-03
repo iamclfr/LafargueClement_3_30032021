@@ -11,10 +11,22 @@
     }
 
     &-link {
+        background: linear-gradient(
+            to top,
+            $secondary 0%,
+            $secondary 10%,
+            transparent 10.01%
+        )
+        no-repeat center bottom / 0 100%;
         color: $font-white;
+        height: 1.5em;
+        transition: all .3s ease-in-out;
 
         i {
             margin-right: .5em;
+        }
+        &:hover {
+            background-size: 50% 100%;
         }
     }
 }

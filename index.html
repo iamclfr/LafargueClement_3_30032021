@@ -1,9 +1,12 @@
 <!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants car leur menu est préparé à l’avance. Plus de perte de temps à consulter la carte !">
+    <meta name="keywords" content="OhMyFood, entreprise, commande, repas, menu, ligne ">
+    <meta name="author" content="LAFARGUE Clément">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta name="theme-color" content="#9356DC">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Oh My Food</title>
     <link rel="stylesheet" href="./public/css/style.css">
@@ -32,7 +35,7 @@
         <section class="section__calltoaction">
             <h2 class="section__calltoaction-title">Réservez le menu qui vous convient</h2>
             <p class="section__calltoaction-subtitle">Découvrez des restaurants d'exeption, sélectionés par nos soins.</p>
-            <a href="/" class="section__calltoaction-button btn-action">Explorer nos restaurants</a>
+            <a href="#restaurants" class="section__calltoaction-button btn-action">Explorer nos restaurants</a>
         </section>
 
         <section class="section__operation">
@@ -48,10 +51,11 @@
             </div>
         </section>
 
-        <section class="section__restaurants">
+        <section class="section__restaurants" id="restaurants">
             <h2 class="section__restaurants-title">Restaurants</h2>
             <div class="section__restaurants-cards">
-                <a href="#">
+                <i class="far fa-heart"></i>
+                <a href="./la-pallette-du-gout.html">
                 <span class="section__restaurants-cards-new" data-value="true">Nouveau</span>
                 <img src="./public/img/rest1.jpg" alt="La palette du goût" class="section__restaurants-cards-img">
                 <h3 class="section__restaurants-cards-title">La palette du goût</h3>
@@ -59,7 +63,8 @@
             </a>
             </div>
             <div class="section__restaurants-cards" data-value="false">
-                <a href="#">
+                <i class="far fa-heart"></i>
+                <a href="./la-note-enchantee.html">
                 <span class="section__restaurants-cards-new" data-value="true">Nouveau</span>
                 <img src="./public/img/rest2.jpg" alt="La note enchantée" class="section__restaurants-cards-img">
                 <h3 class="section__restaurants-cards-title">La note enchantée</h3>
@@ -67,7 +72,8 @@
             </a>
             </div>
             <div class="section__restaurants-cards">
-                <a href="#">
+                <i class="far fa-heart"></i>
+                <a href="./a-la-francaise.html">
                 <span class="section__restaurants-cards-new" data-value="false">Nouveau</span>
                 <img src="./public/img/rest3.jpg" alt="À la française" class="section__restaurants-cards-img">
                 <h3 class="section__restaurants-cards-title">À la française</h3>
@@ -75,7 +81,8 @@
             </a>
             </div>
             <div class="section__restaurants-cards">
-                <a href="#">
+                <i class="far fa-heart"></i>
+                <a href="./le-delice-des-sens.html">
                 <span class="section__restaurants-cards-new" data-value="false">Nouveau</span>
                 <img src="./public/img/rest4.jpg" alt="Le délice des sens" class="section__restaurants-cards-img">
                 <h3 class="section__restaurants-cards-title">Le délice des sens</h3>

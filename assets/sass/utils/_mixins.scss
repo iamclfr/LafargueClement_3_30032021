@@ -7,4 +7,10 @@
     font-weight: 500;
     margin: 0 auto;
     padding: 1em 1.5em;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        box-shadow: 5px 5px 12px $shadow;
+        transform: translateY(-.2em);
+    }
 }

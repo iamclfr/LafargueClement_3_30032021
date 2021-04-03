@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -14,6 +15,10 @@ html {
 body {
     box-sizing: border-box;
     background: $bg-white;
+}
+
+main {
+    padding: 4em 0 0 0;
 }
 
 h2 {
