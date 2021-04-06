@@ -1,12 +1,23 @@
 main {
     .section__introduction {
         background-attachment: fixed;
-        background-image: url(../../../public/img/rest1.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 22em;
-        
+
+        &[data-background='1'] {
+            background-image: url(../../../public/img/rest1.jpg);
+        }
+        &[data-background='2'] {
+            background-image: url(../../../public/img/rest2.jpg);
+        }
+        &[data-background='3'] {
+            background-image: url(../../../public/img/rest3.jpg);
+        }
+        &[data-background='4'] {
+            background-image: url(../../../public/img/rest4.jpg);
+        }
     }
 
     .section__menu {
@@ -53,7 +64,7 @@ main {
                     content: "";
                     position: absolute;
                     top: 50%;
-                    width: 5%;
+                    width: 2.5em;
                     left: 1.85em;
                     height: 3px;
                     border-radius: 2px;
@@ -62,22 +73,23 @@ main {
             }
 
             &-cards {
+                // animation: show-desktop .5s ease-in-out;
+                // animation-fill-mode: both;
                 background-color: $bg-white;
                 border-radius: 25px;
                 box-shadow: 0 5px 15px $shadow;
                 max-width: 28%;
+                overflow: hidden;
                 padding: 1em 1em;
                 width: 100%;
                 position: relative;
-                transition: transform .2s ease-in-out;
-                animation: show-desktop .5s ease-in-out;
-                animation-fill-mode: both;
+                text-overflow: ellipsis;
                 
-                @for $i from 2 through 4 {
-                    &:nth-child(#{$i + 1}){
-                      animation-delay: 0.2s * $i;
-                    }
-                  }
+                // @for $i from 2 through 4 {
+                //     &:nth-child(#{$i + 1}){
+                //       animation-delay: 0.2s * $i;
+                //     }
+                //   }
 
                 &-price {
                     bottom: 1em;
@@ -86,10 +98,55 @@ main {
                     right: 1em;
                 }
 
-                &:hover {
-                   transform: scale(1.2);
+                &-check {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
             }
         }
+
+        &-buy {
+            display: flex;
+            justify-content: center;
+            padding: 0 0 2em 0;
+        }
     }
+}
+
+// Responsive
+
+@media screen and (max-width: $tablet) {
+
+    .section__menu {
+        &-container {
+            flex-direction: column;
+            padding: 2em 2em 0 2em !important;
+
+            &-title {
+                padding: 0 0 1em 0 !important;
+
+                &::before {
+                    left: 0 !important;
+                }
+            }
+
+            &-cards {
+                margin: 0 0 2em 0;
+                max-width: 100% !important;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: $phone) {
+
+    .section__menu {
+        &-container {
+            flex-direction: column;
+            padding: 2em 1em 0 1em !important;
+        }
+    }
+
 }

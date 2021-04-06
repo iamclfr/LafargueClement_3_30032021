@@ -1,14 +1,10 @@
 .footer {
+    align-items: center;
     background-color: $bg-grey-black;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 2em 2em 2em 2em;
-
-    &-img {
-        max-width: 100%;
-        width: 100%;
-    }
 
     &-link {
         background: linear-gradient(
@@ -28,5 +24,30 @@
         &:hover {
             background-size: 50% 100%;
         }
+    }
+}
+
+// Responsive
+
+@media screen and (max-width: $tablet) {
+
+    .footer {
+        &-link {
+            &-svg {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+        svg {
+            margin: 0 0 1em 0;
+        }
+    }
+}
+
+@media screen and (max-width: $phone) {
+
+    .footer {
+        align-items: flex-start;
+        flex-direction: column;
     }
 }

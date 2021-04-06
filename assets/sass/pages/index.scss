@@ -20,13 +20,14 @@ main {
         counter-reset: ope;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 2em 2em 0 2em;
 
         &-title {
             width: 100%;
         }
         &-cards {
+            align-items: center;
             background-color: $bg-grey;
             border-radius: 20px;
             box-shadow: 0 5px 15px $shadow;
@@ -144,6 +145,40 @@ main {
             &:hover {
                 transform: scale(1.02);
             }
+        }
+    }
+}
+
+// Responsive
+@media screen and (max-width: $tablet) {
+
+    .section__operation {
+        flex-direction: column;
+        justify-content: center;
+
+        &-cards {
+            text-align: center;
+        }
+    }
+    
+}
+
+@media screen and (max-width: $phone) {
+    .section__operation {
+        &-cards {
+            padding: 1.5em 0 !important;
+
+            &::before {
+                right: .7em !important;
+            }
+        }
+    }
+
+    .section__restaurants {
+        flex-direction: column;
+
+        &-cards {
+            max-width: 100% !important;
         }
     }
 }
