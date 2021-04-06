@@ -73,23 +73,25 @@ main {
             }
 
             &-cards {
-                // animation: show-desktop .5s ease-in-out;
-                // animation-fill-mode: both;
+                animation: show-desktop .5s ease-in-out;
+                animation-fill-mode: backwards;
                 background-color: $bg-white;
                 border-radius: 25px;
                 box-shadow: 0 5px 15px $shadow;
+                cursor: pointer;
                 max-width: 28%;
                 overflow: hidden;
                 padding: 1em 1em;
                 width: 100%;
                 position: relative;
                 text-overflow: ellipsis;
+                transition: transform .2s ease-in-out;
                 
-                // @for $i from 2 through 4 {
-                //     &:nth-child(#{$i + 1}){
-                //       animation-delay: 0.2s * $i;
-                //     }
-                //   }
+                @for $i from 2 through 4 {
+                    &:nth-child(#{$i + 1}){
+                      animation-delay: 0.2s * $i;
+                    }
+                  }
 
                 &-price {
                     bottom: 1em;
@@ -102,6 +104,10 @@ main {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                }
+
+                &:hover {
+                    transform: scale(1.02);
                 }
             }
         }
