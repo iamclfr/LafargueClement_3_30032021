@@ -54,10 +54,6 @@ main {
                 width: 1.5em;
             }
 
-            &:last-child {
-                background-color: #ff79da21;
-            }
-
             i {
                 margin-right: 1em;
             }
@@ -67,6 +63,7 @@ main {
             }
 
             &:hover {
+                background-color: #ff79da21;
                 transform: scale(1.02);
             }
         }
@@ -102,12 +99,15 @@ main {
                 font-size: 25px;
                 position: absolute;
                 right: 1em;
-                transition: all .2s ease-in-out;
+                transition: all .5s ease-in-out;
 
                 &:hover {
-                    color: $secondary;
+                    background: linear-gradient($primary, $secondary);
+                    color: $font-white;
                     font-weight: 600;
                     transform: scale(1.2);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
             }
 

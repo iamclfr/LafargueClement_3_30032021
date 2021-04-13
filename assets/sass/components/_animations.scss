@@ -11,3 +11,15 @@
         transform: scale(1);
     }
 }
+
+@keyframes checked {
+    0% {
+        transform: rotateZ(100deg);
+    }
+    50% {
+        transform: rotateZ(-50deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
