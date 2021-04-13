@@ -39,3 +39,18 @@
         }
     }
 }
+
+@media screen and (max-width: $phone) {
+
+    .header {
+        i {
+
+            &:hover {
+                &::after {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+}
