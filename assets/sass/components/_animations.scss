@@ -23,3 +23,19 @@
         transform: rotateZ(0deg);
     }
 }
+
+@keyframes loader {
+    0% {
+        visibility: visible;
+        opacity: 1;
+        z-index: 9999;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        visibility: hidden;
+        opacity: 0;
+        z-index: -1;
+    }
+}
