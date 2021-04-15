@@ -164,18 +164,6 @@ main {
             text-align: center;
         }
     }
-
-    .section__restaurants {
-        flex-direction: column;
-
-        &-cards {
-            max-width: 100% !important;
-
-            &-img {
-                height: 10em !important;
-            }
-        }
-    }
     
 }
 
