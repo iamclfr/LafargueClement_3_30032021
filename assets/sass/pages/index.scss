@@ -38,6 +38,10 @@ main {
             padding: 1.5em 5em;
             transition: all .2s ease-in-out;
 
+            &:last-child {
+                background-color: #ff79da21;
+            }
+
             &::before {
                 align-items: center;
                 background-color: $primary;

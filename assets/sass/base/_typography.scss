@@ -15,3 +15,26 @@ h1 {
 a {
     text-decoration: none;
 }
+
+header {
+    a {
+        &:last-child {
+            background-color: $font-black;
+            font-family: 'Shrikhand', cursive;
+            font-size: 3.5rem;
+            margin: 0;
+            padding: 0;
+            transition: all .5s ease-in-out;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+
+            &:hover {
+                background-image: linear-gradient(45deg, $primary, $secondary);
+                background-size: 100%;
+                background-repeat: repeat;
+            }
+        }
+    }
+}

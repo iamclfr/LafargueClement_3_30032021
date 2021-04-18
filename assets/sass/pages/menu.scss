@@ -137,14 +137,11 @@ main {
                         transition: all .4s .2s ease-in-out;
                     }
                 }
+                input:checked ~ .section__menu-container-cards-check {
+                    margin: -1em -1em -1em .5em;
 
-                &:active {
-                    .section__menu-container-cards-check {
-                        margin: -1em -1em -1em .5em;
-
-                        i {
-                            animation: checked 1s 1 ease-in-out;
-                        }
+                    i {
+                        animation: checked 1s 1 ease-in-out;
                     }
                 }
 
