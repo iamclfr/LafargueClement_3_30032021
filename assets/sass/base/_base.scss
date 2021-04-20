@@ -30,3 +30,19 @@ h2 {
 input {
     display: none;
 }
+
+::-webkit-scrollbar {
+    transition: all .5s ease-in-out;
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: $bg-grey;
+}
+::-webkit-scrollbar-thumb {
+    background: $primary;
+    transition: all .5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: linear-gradient($primary, $secondary);
+}

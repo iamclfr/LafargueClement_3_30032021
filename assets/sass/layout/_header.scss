@@ -17,9 +17,8 @@
         transition: all .2s ease-in-out;
 
         &::after {
-            bottom: -.5em;
             color: $primary;
-            content: "Retourner à l'accueil";
+            content: "Accueil";
             font-family: 'Roboto';
             left: 1.5em;
             opacity: 0;

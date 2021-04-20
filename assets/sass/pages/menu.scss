@@ -7,16 +7,16 @@ main {
         height: 22em;
 
         &[data-background='1'] {
-            background-image: url(../../../public/img/rest1.jpg);
+            background-image: url(../../public/img/rest1.jpg);
         }
         &[data-background='2'] {
-            background-image: url(../../../public/img/rest2.jpg);
+            background-image: url(../../public/img/rest2.jpg);
         }
         &[data-background='3'] {
-            background-image: url(../../../public/img/rest3.jpg);
+            background-image: url(../../public/img/rest3.jpg);
         }
         &[data-background='4'] {
-            background-image: url(../../../public/img/rest4.jpg);
+            background-image: url(../../public/img/rest4.jpg);
         }
     }
 
@@ -76,7 +76,7 @@ main {
             }
 
             &-cards {
-                animation: show-desktop .5s ease-in-out;
+                animation: show .5s ease-in-out;
                 animation-fill-mode: backwards;
                 background-color: $bg-white;
                 border-radius: 25px;
@@ -133,6 +133,7 @@ main {
                     margin: -1em -8em -1em 2.5em;  
 
                     i {
+                        color: $font-white;
                         font-size: 30px;
                         transition: all .4s .2s ease-in-out;
                     }
