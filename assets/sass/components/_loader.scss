@@ -32,16 +32,29 @@ $time-step: $time/$max;
 }
 
 .page-preloader {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: $bg-white;
-    animation: loader 1 forwards;
-    animation-duration: 2s;
-    z-index: 9999;
-    #preloader {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-      }
+  font-size: 1em;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: $bg-white;
+  animation: loader 1 forwards;
+  animation-duration: 2s;
+  z-index: 9999;
+  #preloader {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+}
+
+@media screen and (max-width: $tablet) {
+  .page-preloader {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: $phone) {
+    .page-preloader {
+      font-size: 4em;
+    }
 }

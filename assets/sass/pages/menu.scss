@@ -7,16 +7,16 @@ main {
         height: 22em;
 
         &[data-background='1'] {
-            background-image: url(../../public/img/rest1.jpg);
+            background-image: url(../../public/img/rest1.webp);
         }
         &[data-background='2'] {
-            background-image: url(../../public/img/rest2.jpg);
+            background-image: url(../../public/img/rest2.webp);
         }
         &[data-background='3'] {
-            background-image: url(../../public/img/rest3.jpg);
+            background-image: url(../../public/img/rest3.webp);
         }
         &[data-background='4'] {
-            background-image: url(../../public/img/rest4.jpg);
+            background-image: url(../../public/img/rest4.webp);
         }
     }
 
@@ -197,6 +197,14 @@ main {
 @media screen and (max-width: $phone) {
 
     .section__menu {
+        &-title {
+            font-size: 1.4em;
+
+            i {
+                bottom: 0.1em !important;
+                right: 1em !important;
+            }
+        }
         &-container {
             flex-direction: column;
             padding: 2em 1em 0 1em !important;
